@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap'
 
-import Logo from './logo';
+import Logo from './logo'
 
 const Header = ({ siteTitle }) => (
   <header>
     <Navbar bg="light" expand="md">
-      <Navbar.Brand href="/"><Logo /></Navbar.Brand>
+      <Navbar.Brand><Logo /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

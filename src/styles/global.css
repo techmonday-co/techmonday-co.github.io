@@ -1,7 +1,3 @@
-h1 {
-  color: blue;
-}
-
-html {
-  background-color: lavenderblush;
+a, a:hover {
+  text-decoration: none;
 }
