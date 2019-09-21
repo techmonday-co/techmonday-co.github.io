@@ -1,0 +1,7 @@
+header .navbar-brand {
+  line-height: 0;
+}
+
+header .icon-logo {
+  font-size: 2em;
+}
