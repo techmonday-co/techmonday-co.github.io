@@ -7,7 +7,7 @@ import Logo from './logo'
 
 const Header = ({ siteTitle }) => (
   <header>
-    <Navbar bg="light" expand="md">
+    <Navbar bg="white" expand="md">
       <Navbar.Brand><Logo /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

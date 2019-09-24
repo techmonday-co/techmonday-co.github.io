@@ -16,5 +16,19 @@
     left: 0;
     right: 0;
     bottom: 0;
+
+    .gatsby-image-wrapper {
+      min-height: 100%;
+    }
+
+    .headline {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'Poppins';
+      font-size: 1.5rem;
+    }
   }
 }

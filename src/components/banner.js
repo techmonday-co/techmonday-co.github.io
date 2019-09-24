@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { black } from "ansi-colors"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -17,9 +16,9 @@ import { black } from "ansi-colors"
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "banner.jpg" }) {
+      file(relativePath: { eq: "banner.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 1440) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -27,14 +26,14 @@ const Banner = () => {
     }
   `)
 
-  const bannerContent = {
-    backgroundColor: 'black',
-    backgroundImage: data.file
-  }
-
   return (
     <div className="banner">
-      <div className="content" style={bannerContent}></div>
+      <div className="content">
+        <Img fluid={data.file.childImageSharp.fluid} />
+        <div className="headline text-center w-100">
+          You. Me. Technology. Coding.
+        </div>
+      </div>
     </div>
   )
 }
