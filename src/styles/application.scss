@@ -1,4 +1,8 @@
 // THIRD PARTIES
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+// GLOBAL
+@import "./styles.scss";
+
 @import "./components/banner";
+@import "./pages/index";
