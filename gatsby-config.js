@@ -47,6 +47,12 @@ module.exports = {
         fonts: [
           {
             family: `Poppins`
+          },
+          {
+            family: `Prompt`
+          },
+          {
+            family: `Athiti`
           }
         ],
       },

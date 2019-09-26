@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
-import PostCard from "../components/post_card"
+import PostCover from "../components/post-cover"
 
 class IndexPage extends React.Component {
   render() {
@@ -18,13 +18,13 @@ class IndexPage extends React.Component {
         <SEO title={siteTitle} />
         <Banner />
         <Container className="hilight">
-          {_.chunk(posts, 3).map((postRow, index) => {
+          {_.chunk(posts, 4).map((postRow, index) => {
             return (
               <Row key={"row-#{index}"}>
                 {
                   postRow.map((post) => {
-                    return <Col key={post.node.slug}>
-                      <PostCard post={post.node}></PostCard>
+                    return <Col key={post.node.slug} xs={12} md={6} className="post-gutter">
+                      <PostCover post={post.node}></PostCover>
                     </Col>
                   })
                 }
